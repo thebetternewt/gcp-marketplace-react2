@@ -7,108 +7,114 @@ import profileImg from '../../images/profile1.jpg';
 const Profile = props => {
   console.log(props);
   return (
-    <div style={{ flexGrow: 1, marginTop: '2rem' }}>
-      <div>
-        <div className="row">
-          <aside className="hidden-sm col-md-3">Sidebar</aside>
-          <ProfileContainer className="col-sm-12 col-md">
-            <div className="container">
-              <div className="row" style={{ alignItems: 'center' }}>
-                <div
-                  className="col-sm-12 col-md-4"
-                  style={{ textAlign: 'center' }}
-                >
-                  <img
-                    src={profileImg}
-                    alt="John Doe"
-                    className="profile-img circular"
-                  />
-                </div>
-                <div className="col-sm-12 col-md-8 profile-header">
-                  <h1>John Doe</h1>
-                  <SocialLinks>
-                    <li>
-                      <div className="circular primary">
-                        <a href="/profile">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="circular primary">
-                        <a href="/profile">
-                          <i className="fab fa-twitter" />
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="circular primary">
-                        <a href="/profile">
-                          <i className="fab fa-instagram" />
-                        </a>
-                      </div>
-                    </li>
-                    <li>
+    <div
+      style={{
+        flexGrow: 1,
+        margin: '2rem auto 0',
+        width: 1200,
+        maxWidth: '100%',
+      }}
+    >
+      {/* <div> */}
+      <div className="row">
+        <ProfileContainer className="col-sm-12 col-md col-md-offset-3">
+          <div className="container">
+            <div className="row" style={{ alignItems: 'center' }}>
+              <div
+                className="col-sm-12 col-md-4"
+                style={{ textAlign: 'center' }}
+              >
+                <img
+                  src={profileImg}
+                  alt="John Doe"
+                  className="profile-img circular"
+                />
+              </div>
+              <div className="col-sm-12 col-md-8 profile-header">
+                <h1>John Doe</h1>
+                <SocialLinks>
+                  <li>
+                    <div className="circular primary">
                       <a href="/profile">
-                        <div className="circular primary">
-                          <i className="fal fa-link" />
-                        </div>
+                        <i className="fab fa-facebook-f" />
                       </a>
-                    </li>
-                  </SocialLinks>
-                </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="circular primary">
+                      <a href="/profile">
+                        <i className="fab fa-twitter" />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="circular primary">
+                      <a href="/profile">
+                        <i className="fab fa-instagram" />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="/profile">
+                      <div className="circular primary">
+                        <i className="fal fa-link" />
+                      </div>
+                    </a>
+                  </li>
+                </SocialLinks>
               </div>
-              <div className="row">
-                <div className="bio">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nobis sint animi omnis, sunt ex vitae ullam consequuntur
-                    suscipit nihil dicta expedita, ab ratione accusantium
-                    reprehenderit quisquam impedit fugit eveniet aliquid. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    sint animi omnis, sunt ex vitae ullam consequuntur suscipit
-                    nihil dicta expedita.
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div>
-                  <h2>Skills</h2>
-                  <Skills>
-                    <li>
-                      <mark className="inline-block">Web development</mark>
-                    </li>
-                    <li>
-                      <mark className="inline-block">Design</mark>
-                    </li>
-                    <li>
-                      <mark className="inline-block">NodeJS</mark>
-                    </li>
-                    <li>
-                      <mark className="inline-block">NodeJS</mark>
-                    </li>
-                  </Skills>
-                </div>
-              </div>
-              <hr />
-              <Feed />
             </div>
-          </ProfileContainer>
-          <aside
-            className="col-sm-12 col-md-3"
-            style={{ justifyContent: 'center' }}
-          >
-            <ActionPanel>
-              <h3>Things you can do</h3>
-              <hr />
-              <ul>
-                <li>Blog for GCP</li>
-                <li>Invite friends</li>
-              </ul>
-            </ActionPanel>
-          </aside>
-        </div>
+            <div className="row">
+              <div className="bio">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  sint animi omnis, sunt ex vitae ullam consequuntur suscipit
+                  nihil dicta expedita, ab ratione accusantium reprehenderit
+                  quisquam impedit fugit eveniet aliquid. Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Nobis sint animi omnis,
+                  sunt ex vitae ullam consequuntur suscipit nihil dicta
+                  expedita.
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div>
+                <h2>Skills</h2>
+                <Skills>
+                  <li>
+                    <mark className="inline-block">Web development</mark>
+                  </li>
+                  <li>
+                    <mark className="inline-block">Design</mark>
+                  </li>
+                  <li>
+                    <mark className="inline-block">NodeJS</mark>
+                  </li>
+                  <li>
+                    <mark className="inline-block">NodeJS</mark>
+                  </li>
+                </Skills>
+              </div>
+            </div>
+            <hr />
+            <Feed />
+          </div>
+        </ProfileContainer>
+        <aside
+          className="col-sm-12 col-md-3"
+          style={{ justifyContent: 'center' }}
+        >
+          <ActionPanel>
+            <h3>Things you can do</h3>
+            <hr />
+            <ul>
+              <li>Blog for GCP</li>
+              <li>Invite friends</li>
+            </ul>
+          </ActionPanel>
+        </aside>
       </div>
+      {/* </div> */}
     </div>
   );
 };
@@ -135,6 +141,17 @@ const ProfileContainer = styled.div`
   }
   .bio > p {
     font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .profile-header {
+      h1 {
+        text-align: center;
+      }
+      ul {
+        justify-content: center;
+      }
+    }
   }
 
   @media screen and (max-width: 320px) {
